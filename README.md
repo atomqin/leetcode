@@ -122,7 +122,7 @@ class LRUCache {
         }
         private Node removeLast(){
             Node last = tail.prev;
-            if (last == null) return null;
+            if (last == head) return null;
             remove(last);
             return last;
         }
