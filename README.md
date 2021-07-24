@@ -87,6 +87,10 @@ lRUCache.get(1);    // 返回 -1 (未找到)
 lRUCache.get(3);    // 返回 3
 lRUCache.get(4);    // 返回 4
 ```
+
+**哈希链表**`LinkedHashMap`:它是双向链表和哈希表的结合体
+
+每次默认从链表头添加元素，链表尾消除元素，即左增右消（也可左消右增）
 ```java
 import java.util.HashMap;
 class LRUCache {
@@ -99,6 +103,7 @@ class LRUCache {
         }
     }
     class DoubleList{
+        //表头 表尾
         Node head, tail;
         int size;
         public DoubleList(){
@@ -131,6 +136,7 @@ class LRUCache {
             return size;
         }
     }
+    //最大容量
     private int cap;
     HashMap<Integer, Node> map;
     private DoubleList cache;
@@ -163,6 +169,7 @@ class LRUCache {
             cache.addFirst(x);
             map.put(key, x);
         }else{
+            //达到最大容量
             if (cap == cache.size()) {
                 Node last = cache.removeLast();
                 //这就是为什么结点要有key和val两个属性
