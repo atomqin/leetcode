@@ -112,8 +112,8 @@ class Solution:
             if haystack[i] == needle[j + 1]:
                 j += 1
             if j == m:
-                # i 和 j 从下标 1 开始的
-                return i - j
+                # i 是从下标 1 开始的,算出来的位置要再减一
+                return i - m + 1 - 1
         return -y
 
 ```
