@@ -112,6 +112,7 @@ class Solution:
             if haystack[i] == needle[j + 1]:
                 j += 1
             if j == m:
+                # i 和 j 从下标 1 开始的
                 return i - j
         return -y
 
