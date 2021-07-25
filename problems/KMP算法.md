@@ -56,7 +56,10 @@ public class Solution {
 ### 其他写法
 next[i] 表示 i（包括i）之前最长相等的前后缀长度（其实就是j）
 
-next[0]初始化为-1, j 从 -1 开始,
+next[0]初始化为-1, j 从 -1 开始
+
+![Alt](https://pic.leetcode-cn.com/1618845342-ydYJRp-9364346F937803F03CD1A0AE645EA0F1.jpg)
+
 ```python
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
@@ -85,6 +88,33 @@ class Solution:
             if j == len(needle) - 1:
                 return i - j
         return -1
+```
+- 在实际编码时，通常会往原串和匹配串头部追加一个空格（哨兵）。**目的是让 j 下标从 0 开始，省去 j 从 -1 开始的麻烦**
+```python
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        n, m = len(haystack), len(needle)
+        if m == 0: return 0
+        next = [0] * (m + 1)
+        haystack = " " + haystack
+        needle = " " + needle
+        j = 1
+        for i in range(2, m + 1):
+            while j > 0 and needle[i] != needle[j + 1]:
+                j = next[j]
+            if needle[i] == needle[j + 1]:
+                j += 1
+            next[i] = j
+        j = 0
+        for i in range(1, n + 1):
+            while j > 0 and haystack[i] != needle[j + 1]:
+                j = next[j]
+            if haystack[i] == needle[j + 1]:
+                j += 1
+            if j == m:
+                return i - j
+        return -y
+
 ```
 前缀表不减一构建next数组, next[0] = 0, j 从 0 开始
 ```python
