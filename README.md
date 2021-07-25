@@ -2,7 +2,7 @@
 ### KMP
 ####  程序员小灰版本
 
-<img src="C:\Users\32332\AppData\Roaming\Typora\typora-user-images\1619350586866.png" alt="1619350586866" style="zoom:80%;" />
+
 ==主字符串`str`和模式字符串`pattern`==
 `next[]`数组记录的就是**最长可匹配子前缀**
 如对于模式字符串 `GTGTGCF`，它的`next[]`数组为`0,0,0,1,2,3,0`
@@ -54,6 +54,69 @@ public class Solution {
         return next;
     }
 }
+```
+### 其他写法
+next[i] 表示 i（包括i）之前最长相等的前后缀长度（其实就是j）
+
+next[0]初始化为-1, j 从 -1 开始,
+```python
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        def getNext(str):
+            n = len(str)
+            next = [0] * n
+            j = -1
+            next[0] = -1
+            for i in range(1, n):
+                while j >= 0 and str[i] != str[j + 1]:
+                    j = next[j]
+                if str[i] == str[j + 1]:
+                    j += 1
+                next[i] = j
+            return next
+        if len(needle) == 0:
+            return 0
+        next = getNext(needle)
+        n = len(haystack)
+        j = -1
+        for i in range(0, n):
+            while j >= 0 and haystack[i] != needle[j + 1]:
+                j = next[j]
+            if haystack[i] == needle[j + 1]:
+                j += 1
+            if j == len(needle) - 1:
+                return i - j
+        return -1
+```
+前缀表不减一构建next数组, next[0] = 0, j 从 0 开始
+```python
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        def getNext(str):
+            n = len(str)
+            next = [0] * n
+            j = 0
+            
+            for i in range(1, n):
+                while j > 0 and str[i] != str[j]:
+                    j = next[j - 1]
+                if str[i] == str[j]:
+                    j += 1
+                next[i] = j
+            return next
+        if len(needle) == 0:
+            return 0
+        next = getNext(needle)
+        n = len(haystack)
+        j = 0
+        for i in range(0, n):
+            while j > 0 and haystack[i] != needle[j]:
+                j = next[j - 1]
+            if haystack[i] == needle[j]:
+                j += 1
+            if j == len(needle):
+                return i - j + 1
+        return -1
 ```
 ## LRU(Least Recently Used)
 力扣 146 题”LRU缓存机制“
