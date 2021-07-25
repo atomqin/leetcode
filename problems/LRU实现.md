@@ -31,6 +31,8 @@ lRUCache.get(4);    // 返回 4
 利用数据结构**哈希链表**`LinkedHashMap`:它是双向链表和哈希表的结合体
 
 每次默认从链表头添加元素，链表尾消除元素，即左增右消（也可左消右增）
+
+**注**：每次从链表中删除结点时，不要忘记将 map 中对应的键值对也去掉
 ```java
 import java.util.HashMap;
 class LRUCache {
