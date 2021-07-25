@@ -3,4 +3,4 @@
 ## LRU(Least Recently Used)
 [力扣146题 “LRU缓存机制”](https://github.com/atomqin/leetcode/blob/master/problems/LRU%E5%AE%9E%E7%8E%B0.md)
 
-
+[459. 重复的子字符串](https://github.com/atomqin/leetcode/blob/master/problems/459.%20%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
