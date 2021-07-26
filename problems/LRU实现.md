@@ -139,6 +139,7 @@ class LRUCache extends LinkedHashMap<Integer, Integer>{
     private int capacity;
     
     public LRUCache(int capacity) {
+        // true:按访问顺序 false:按插入顺序
         super(capacity, 0.75F, true);
         this.capacity = capacity;
     }
