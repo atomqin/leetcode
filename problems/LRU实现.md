@@ -132,6 +132,8 @@ class LRUCache {
 ```
 - 也可以用自带的 `LinkedHashMap` 实现
 
+**注**：默认的LinkedHashMap并不会移除旧元素，如果需要移除旧元素，则需要重写removeEldestEntry()方法设定移除策略；
+
 ```java
 class LRUCache extends LinkedHashMap<Integer, Integer>{
     private int capacity;
