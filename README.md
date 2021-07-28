@@ -22,6 +22,8 @@
  [404 左叶子之和](https://github.com/atomqin/leetcode/blob/master/problems/404%20%E5%B7%A6%E5%8F%B6%E5%AD%90%E4%B9%8B%E5%92%8C.md)
  
  [513 找树坐下角的值](https://github.com/atomqin/leetcode/blob/master/problems/%E6%89%BE%E6%A0%91%E5%B7%A6%E4%B8%8B%E8%A7%92%E7%9A%84%E5%80%BC.md))
+ 
+ [106 从中序与后序遍历序列构造二叉树](https://github.com/atomqin/leetcode/new/master/problems)
 ## LRU(Least Recently Used)
 [力扣146题 “LRU缓存机制”](https://github.com/atomqin/leetcode/blob/master/problems/LRU%E5%AE%9E%E7%8E%B0.md)
 
