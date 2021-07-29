@@ -24,7 +24,7 @@
  [106 从中序与后序遍历序列构造二叉树](https://github.com/atomqin/leetcode/new/master/problems)
  
  ### 线段树
- [SetmentTree实现](https://github.com/atomqin/leetcode/new/master/problems)
+ [SegmentTree实现](https://github.com/atomqin/leetcode/new/master/problems)
 ## LRU(Least Recently Used)
 [力扣146题 “LRU缓存机制”](https://github.com/atomqin/leetcode/blob/master/problems/LRU%E5%AE%9E%E7%8E%B0.md)
 
