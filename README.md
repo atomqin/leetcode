@@ -22,8 +22,10 @@
  [106 从中序与后序遍历序列构造二叉树](https://github.com/atomqin/leetcode/blob/master/problems/%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.md)
  
  [654 构造最大二叉树](https://github.com/atomqin/leetcode/blob/master/problems/654%20%E6%9E%84%E9%80%A0%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91.md)
- 
+ ### 二叉搜索树
  中序遍历[98 验证二叉搜索树](https://github.com/atomqin/leetcode/blob/master/problems/98%20%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.md)
+ 
+ [二叉搜索树中的众数](https://github.com/atomqin/leetcode/blob/master/problems/501%20%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E4%BC%97%E6%95%B0.md)
  ### 线段树
  [SegmentTree实现](https://github.com/atomqin/leetcode/new/master/problems)
 ## LRU(Least Recently Used)
