@@ -1,0 +1,68 @@
+将删除结点的左子树作为右子树最小结点的，返回删除节点的右节点
+- 写法一
+```java
+class Solution {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        if (root == null) return null;
+        if (root.val == key){
+            //左右为空或有一个为空
+            if(root.left == null) return root.right;
+            if(root.right == null) return root.left;
+            TreeNode minNode = getMin(root.right);
+            minNode.left = root.left;
+            return root.right;
+        }else if(root.val < key)
+            root.right = deleteNode(root.right, key);
+        else 
+            root.left = deleteNode(root.left, key);
+        return root;
+    }
+    private TreeNode getMin(TreeNode root){
+        if (root.left == null) return root;
+        return getMin(root.left);
+    }
+    
+    /*private void getMin(TreeNode root){
+        while(root.left != null) root = root.left;
+        return root;
+    }*/
+}
+```
+- 迭代法
+```java
+class Solution {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        if(root == null) return null;
+        TreeNode cur = root;
+        TreeNode pre = null;
+        while(cur != null){
+            if(cur.val == key) break;
+            pre = cur;//记录cur的父结点，用来删除cur
+            if(cur.val > key) cur = cur.left;
+            else if(cur.val < key) cur = cur.right;
+        }
+        //删除的正好是头结点
+        if(pre == null) return deleteNode(cur);
+        //删左孩子还是右孩子
+        if(pre.left != null && pre.left == cur){
+            pre.left = deleteNode(cur);
+        }
+        if(pre.right != null && pre.right == cur){
+            pre.right = deleteNode(cur);
+        }
+        return root;
+    }
+    private TreeNode deleteNode(TreeNode root){
+        //左右孩子至少有一个为空
+        if (root.left == null) return root.right;
+        if (root.right == null) return root.left;
+        //寻找右子树最左面的结点
+        TreeNode cur = root.right;
+        while(cur.left != null){
+            cur = cur.left;
+        }
+        cur.left = root.left;
+        return root.right;
+    }
+}
+```
