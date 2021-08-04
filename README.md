@@ -8,6 +8,10 @@
 ## 队列
 [双向队列解决滑动窗口最大值](https://github.com/atomqin/leetcode/blob/master/problems/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97%E8%A7%A3%E5%86%B3%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC.md)
 
+## 单调栈
+
+[42 接雨水](https://github.com/atomqin/leetcode/blob/master/problems/%E6%8E%A5%E9%9B%A8%E6%B0%B4.md)
+
 ## 二叉树
 
 遍历方式
