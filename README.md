@@ -1,3 +1,7 @@
+## 基础算法
+### 差分
+性质：b[i] = a[i] - a[i - 1](b[0] = a[0]), sum(b[i]) = a[i]
+[一维与二维差分](https://www.acwing.com/solution/content/10946/)
 ## 字符串
 [力扣28 利用KMP匹配字符串](https://github.com/atomqin/leetcode/blob/master/problems/KMP%E7%AE%97%E6%B3%95.md)
 
