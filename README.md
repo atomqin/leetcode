@@ -12,6 +12,8 @@
 
 ## 队列
 [双向队列解决滑动窗口最大值](https://github.com/atomqin/leetcode/blob/master/problems/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97%E8%A7%A3%E5%86%B3%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC.md)
+## 有序集合
+[TreeSet -> 考场就座](https://github.com/atomqin/leetcode/blob/master/problems/855%20%E8%80%83%E5%9C%BA%E5%B0%B1%E5%BA%A7.md)
 
 ## 单调栈
 
