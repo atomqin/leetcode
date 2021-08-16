@@ -90,6 +90,7 @@ class Solution:
         return -1
 ```
 - 在实际编码时，通常会往原串和匹配串头部追加一个空格（哨兵）。**目的是让 j 下标从 0 开始，省去 j 从 -1 开始的麻烦**
+- 记住这个和小灰的就行
 ```python
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
@@ -98,7 +99,7 @@ class Solution:
         next = [0] * (m + 1)
         haystack = " " + haystack
         needle = " " + needle
-        j = 1
+        j = 0
         for i in range(2, m + 1):
             while j > 0 and needle[i] != needle[j + 1]:
                 j = next[j]
@@ -113,7 +114,7 @@ class Solution:
                 j += 1
             if j == m:
                 # i 是从下标 1 开始的,算出来的位置要再减一
-                return i - m + 1 - 1
+                return i - (m - 1) - 1
         return -1
 
 ```
