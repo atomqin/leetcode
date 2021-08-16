@@ -114,7 +114,7 @@ class Solution:
             if j == m:
                 # i 是从下标 1 开始的,算出来的位置要再减一
                 return i - m + 1 - 1
-        return -y
+        return -1
 
 ```
 前缀表不减一构建next数组, next[0] = 0, j 从 0 开始
