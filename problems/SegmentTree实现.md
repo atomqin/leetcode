@@ -1,3 +1,4 @@
+```java
 /**
  * 线段树实现，线段树不是完全二叉树，而是平衡二叉树
  *
@@ -39,6 +40,7 @@
  * <p>
  * 区间相关的问题被归类为 RMQ（Range Minimum Query）问题
  */
+
 public class SegmentTree<E> {
     private E[] data;
     private E[] tree;
@@ -203,3 +205,4 @@ public class SegmentTree<E> {
         System.out.println(segTree.query(0, 5));
     }
 }
+```
