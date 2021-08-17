@@ -67,3 +67,5 @@
 [二分图](https://github.com/atomqin/leetcode/blob/master/problems/%E4%BA%8C%E5%88%86%E5%9B%BE.md)
 
 [1631 最小体力消耗路径](https://github.com/atomqin/leetcode/blob/master/problems/1631%20%E6%9C%80%E5%B0%8F%E4%BD%93%E5%8A%9B%E6%B6%88%E8%80%97%E8%B7%AF%E5%BE%84.md)
+## 动态规划
+从集合角度考虑，通常从倒数第二步入手
