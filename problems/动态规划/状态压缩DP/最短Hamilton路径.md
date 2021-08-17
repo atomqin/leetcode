@@ -47,7 +47,7 @@ public class Main {
         for(int[] d : dp)
             Arrays.fill(d, 0x3f3f3f3f);
         dp[1][0] = 0;
-        //优先级排序：(+-) > (<<>>) > (==) > (&) 
+        //优先级排序：(+-) > (<<>>) > (==) > (&) 单目 > 算术 > 位移 > 关系 > 逻辑 > 三目 > 赋值
         for (int i = 0; i < 1 << n; i++) {
             for (int j = 0; j < n; j++) {
                 if ((i >> j & 1) == 1) {
