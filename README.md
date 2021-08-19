@@ -1,6 +1,7 @@
 ## 基础算法
 ### 数学运算
 [快速查找素数个数](https://github.com/atomqin/leetcode/blob/master/problems/%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97/%E5%BF%AB%E9%80%9F%E6%9F%A5%E6%89%BE%E7%B4%A0%E6%95%B0%E4%B8%AA%E6%95%B0.md)
+
 [矩阵快速幂](https://github.com/atomqin/leetcode/blob/master/problems/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82.md)
 ### 差分
 性质：b[i] = a[i] - a[i - 1](b[0] = a[0]), sum(b[i]) = a[i]
