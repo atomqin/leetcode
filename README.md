@@ -39,6 +39,8 @@
  [654 构造最大二叉树](https://github.com/atomqin/leetcode/blob/master/problems/654%20%E6%9E%84%E9%80%A0%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91.md)
  
  [二叉树的垂序遍历](https://github.com/atomqin/leetcode/blob/master/problems/%E6%A0%91/987%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%9E%82%E5%BA%8F%E9%81%8D%E5%8E%86.md)
+ 
+ [124 最大路径和](https://github.com/atomqin/leetcode/blob/master/problems/%E6%A0%91/124%20%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E8%B7%AF%E5%BE%84%E5%92%8C.md)
  ### 二叉搜索树
  中序遍历[98 验证二叉搜索树](https://github.com/atomqin/leetcode/blob/master/problems/98%20%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.md)
  
