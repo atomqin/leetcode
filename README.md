@@ -7,6 +7,8 @@
 性质：b[i] = a[i] - a[i - 1](b[0] = a[0]), sum(b[i]) = a[i]
 
 [一维与二维差分](https://www.acwing.com/solution/content/10946/)
+
+[1893 检查区域内所有整数都被覆盖](https://leetcode-cn.com/problems/check-if-all-the-integers-in-a-range-are-covered/solution/yi-ti-san-jie-bao-li-you-hua-chai-fen-by-w7xv/)
 ## 字符串
 [力扣28 利用KMP匹配字符串](https://github.com/atomqin/leetcode/blob/master/problems/KMP%E7%AE%97%E6%B3%95.md)
 
